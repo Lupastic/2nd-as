@@ -9,7 +9,7 @@
         .conteiner{
             display: flex ;
             justify-content:center ;
-            
+            align-items: center; 
         }
         .clahjkl{
             writing-mode: vertical-rl;
@@ -19,10 +19,39 @@
             background-color: azure;
             width: auto;
         }
+        .flex{
+          display: flex;
+          justify-content: center;
+        }
+
+        .image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        }
+
+        .buttonstyle {
+        background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+        width: 150px; 
+        height: 50px; 
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        border-radius: 28px;
+        text-shadow: 3px 2px 1px #9daef5;
+        -webkit-box-shadow: 6px 5px 24px #666666;
+        -moz-box-shadow: 6px 5px 24px #666666;
+        box-shadow: 6px 5px 24px #666666;
+        font-family: Arial;
+        color: #fafafa;
+        font-size: 14px;
+        padding: 10px;
+        text-decoration: none;
+        }
+
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body style="background-color: lightblue;">
+<body id="bc1" style="background-color: lightblue;">
   <section>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
         <div class="container-fluid">
@@ -30,28 +59,41 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="file:///C:/Users/begim/OneDrive/Документы/html,css/index1.html#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="C:\Users\begim\OneDrive\Документы\html,css\2nd as\index1.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="C:\Users\begim\OneDrive\Документы\html,css\review.html">review</a>
+                        <a class="nav-link" href="C:\Users\begim\OneDrive\Документы\html,css\2nd as\review.html">review</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="js.html">js_functions</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 </section>
-
   
     <section id="home">
       <div style="display: flex; justify-content: space-around; align-items: center;">
         <div>
-          <h1>Its my first web page</h1>
+          <h1>Begimkulov Baktybek</h1>
           <p>I see myself as this picture when I started doing it</p>
         </div>
-        <img class="rounded-lg-3" src="C:\Users\begim\OneDrive\Изображения\An_African_medicine_man_or_shaman_using_symbols_and_small_an_Wellcome_V0015954.jpg" width="600" style="border-radius: 5%; margin-top: 90px;" >
+        <img class="rounded-lg-3" src="C:\Users\begim\OneDrive\Изображения\An_African_medicine_man_or_shaman_using_symbols_and_small_an_Wellcome_V0015954.jpg" width="600" id="img11" style="border-radius: 5%; margin-top: 90px;" >
       </div>
     </section>
-  
+    
+<section class="flex" style="margin-top: 10px;">
+  <button onclick="changebc()" style="background-color: red; color: white; border: none; border-radius: 5px;"> change background-color</button>
+</section>
+<section class="flex" style="margin-top: 10px;">
+  <button onclick="changebcback()" style="background-color: lightblue; color: white; border: none; border-radius: 5px;"> change background-color back</button>
+</section>
+<section class="flex" style="margin-top: 10px;">
+  <button onclick="change_img()"  style="background-color: blue; color: white; border: none; border-radius: 5px;"> change my picture</button>
+
+</section>
+
   <section id="hobbies" style="background-color: rgb(34, 111, 137); margin-top: 59px;">
     <h1  style="display: flex ; justify-content:center ; background-color: azure; width: auto ">My hobbies</h1>
       <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -59,11 +101,11 @@
           <h2 class="featurette-heading fw-normal lh-1">Volleyball</h2>
           <p class="lead">Volleyball is one of my favorite sports, I've been playing it for about 3 years, I've taken different prizes.</p>
         </div>
-          <img src="C:/Users/begim/Downloads/i.webp" class="featurette-image img-fluid mx-auto" width="400" height="400" style="border-radius: 25%; margin-left: 20px;">
+          <img src="https://avatars.mds.yandex.net/i?id=b73ea4a549d3b2f2de407910b87ef6757de92ec8-10115334-images-thumbs&n=13" class="featurette-image img-fluid mx-auto" width="400" height="400" style="border-radius: 25%; margin-left: 20px;">
       </div>
 
       <div style="display: flex; align-items: center; justify-content: space-between;">
-        <img src="C:/Users/begim/Downloads/e645c73948d57cae531ea705d7a5c0f4.jpg" class="featurette-image img-fluid mx-auto" width="400" height="400" style="border-radius: 25%;">
+        <img src="https://avatars.mds.yandex.net/i?id=11164c34e2db68675fd630c8d3319702d231b2d4-9148169-images-thumbs&n=13" class="featurette-image img-fluid mx-auto" width="400" height="400" style="border-radius: 25%;">
         <div style="flex: 1; margin-left: 80px; margin-right: 40px;">
             <h2 class="featurette-heading fw-normal lh-1">Cikling <span class="text-body-secondary">cycling culture</span></h2>
             <p class="lead">since last year, I have been very fond of cycling. I have a fixed gear. it is a type of bike with a fixed gear and with its own sub culture</p>
@@ -75,8 +117,44 @@
           <h2 class="featurette-heading fw-normal lh-1" >Anime <span class="text-body-secondary"> manga,manhwa</span></h2>
           <p class="lead">I started watching anime in 2018, I really like the fact that the plots are not limited there and you can imagine anything.</p>
         </div>
-        <img src="C:/Users/begim/Downloads/dc2ee402c5e58d8bc3d39351840bcfb4.jpg"  class="featurette-image img-fluid mx-auto" width="400" height="400" style= border-radius:25%;>
+        <img src="https://avatars.mds.yandex.net/i?id=e634b0ecd2e6172de66970cc74258feaa855a9ce-9245043-images-thumbs&n=13"  class="featurette-image img-fluid mx-auto" width="400" height="400" style= border-radius:25%;>
       </div>  
+  </section>
+
+  <section class="flex" style="margin-top: 60px;">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://avatars.mds.yandex.net/i?id=00a05f59ea70c4af99b4ae958d87c9b2687cbe5b-8427457-images-thumbs&n=13" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=1bdbef6fa664392cdd3ff89bb7395bf7-6217553-images-thumbs&n=13" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://avatars.mds.yandex.net/i?id=10de7c74412dcf3840a3993aaab08b4e_l-4568513-images-thumbs&n=13" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </section>
+  <section style="margin-top: 50px" class="flex">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" >Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#home">1</a></li>
+        <li class="page-item"><a class="page-link" href="#hobbbies">2</a></li>
+        <li class="page-item"><a class="page-link" href="#contactme">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
   </section>
 
     <section id="contactme" style="background-color: rgb(40, 115, 76);">
@@ -88,12 +166,12 @@
               </a>
             </header>
         
-            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-              <div class="container-fluid py-5">
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3" >
+              <div class="container-fluid py-5" >
                 <h1 class="display-5 fw-bold">Link to my Instagram</h1>
                 <p class="col-md-8 fs-4">there are some pictures </p>
                 <a href="https://www.instagram.com/1baktybek9?igsh=MTN3Z2o0bTM3MGVubw==" class="btn btn-primary btn-lg">Link</a>
-                <img src="C:\Users\begim\Downloads\photo_5440884353648420069_y.jpg" width="200px" style="float:inline-end; margin-right: 80px; margin-top: -140px;">
+                <img src="C:\Users\begim\Downloads\db6a9ae5-83ca-4bf6-8544-74829df345f9.jpeg" width="200px" style="float:inline-end; margin-right: 80px; margin-top: -140px; ">
               </div>
             </div>
         
@@ -119,5 +197,8 @@
             </footer>
           </div>
 </section>
+
+
+<script src="continue.js"></script>
 </body>
 </html>
